@@ -4,18 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Agencia de Viagens</title>
 	</head>
 	<body>
 
 		<header role="banner">
 			<nav role="navigation" aria-level="main navigation">
 				<div id="header-completo">
-					<div id="header-logo"></div>
+					<div id="header-logo">
+						<img src="around.png" alt="Logo Empresa" />
+					</div>
 					<div id="menu-botao"></div>
-					<div id="menu"></div>
+					<div id="menu">
+						<ul id="itens-menu">
+							<li id="home">
+								<a target="_blank" href="">Home</a>
+							</li>
+							<li id="sobre">
+								<a target="_blank" href="">Sobre Nós</a>
+							</li>
+							<li id="destinos-item">
+								<a target="_blank" href="">Destinos</a>
+							</li>
+							<li id="dicas-item">
+								<a target="_blank" href="">Dicas</a>
+							</li>
+						</ul>
+					</div>
 					<div id="busca">
-						<div id="busca-fechar">
+						<i class="fas fa-search"></i>
 						</div>
 					</div>
 				</div>
@@ -23,11 +41,37 @@
 
 		<main role="main">
 			<div id="conteudo-destaque">
+				<img src="certo.png" alt="Logo Empresa" />
+				<h1>Conheça a AroundTheWorld</h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni atque odit ipsa, ratione eius sapiente ab impedit quas non fugiat, ullam iste illo eaque iure pariatur tenetur quis rem rerum.
+				</p>
 			</div>
 			<div id="servicos-oferecidos">
+      	<div class="servicos-item"><h2 class="servicos-item-hotel">Hotel</h2><h3>em todos os destinos</h3></div>
+      	<div class="servicos-item"><h2 class="servicos-item-passagem">Passagens</h2><h3>aéreas</h3></div>
+      	<div class="servicos-item"><h2 class="servicos-item-visto">Vistos</h2><h3>e documentação</h3></div>
+      	<div class="servicos-item"><h2 class="servicos-item-seguro">Seguros</h2><h3>para sua viagem</h3></div>
+    </div>
 			</div>
-			<div id="destinos"></div>
-			<div id="dicas"></div>
+			<div id="destinos">
+				<div id="titulo">
+					<h2 class="destino-titulo">Destinos</h2>
+					<select onchange="selecao()" class="selecione-opcoes" id="opcoes">
+						<option value="nada">Filtro</option>
+						<option value="menor">Menor Preço</option>
+						<option value="maior">Maior Preço</option>
+						<option value="internacional">Viagens Internacionais</option>
+						<option value="nacionais">Viagens Nacionais</option>
+					</select>
+				</div>
+				<div id="destinos-nacionais"></div>
+				<div id="destinos-internacionais"></div>
+			</div>
+			<div id="dicas">
+				<div id="dicas-titulo">Dicas</div>
+				<div id="dicas-conteudo"></div>
+			</div>
 			<div id="unidades"></div>
 		</main>
 	
