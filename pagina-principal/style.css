@@ -1,1 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: rgb(58, 55, 61);
+  font-family: 'Poppins', sans-serif;
+}
 
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 1px 1px 10px 1px #000;
+  margin-bottom: 55px;
+}
+
+header ul li {
+  padding: 5px;
+}
+
+header ul li a {
+  transition: 300ms;
+}
+
+header ul li a:hover {
+  color: rgb(91, 181, 184);
+  text-decoration: underline;
+}
+header ul li:hover {
+  transform: scale(1.1);
+}
+
+#conteudo-destaque {
+  width: calc(100% - 300px);
+  text-align: left;
+  padding: 0 0 0 70px;
+  box-sizing: border-box;
+  position: relative;
+  float: right;
+}
+
+h1 {
+  width: 100%;
+  color: #005162;
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  line-height: 1em;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+}
+
+p {
+  width: 100%;
+  color: #575757;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.173em;
+  letter-spacing: 0.4px;
+  padding: 25px 0 0 0;
+  position: relative;
+  text-align: center;
+}
+
+#servicos-oferecidos {
+  background-color: #005162;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  float: right;
+}
