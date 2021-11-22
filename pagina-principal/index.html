@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css" />
-    <title>Agencia de Viagens</title>
+    <title>AroundTheWorld sua agência de viagens</title>
 	</head>
 	<body>
 
@@ -32,26 +32,26 @@
 					</div>
 		</header>
 
-		<main role="main">
-			
-				<img src="certo.png" alt="Logo Empresa" />
+		<main>
+			<div id="destaque-principal">
+				<img src="certo.png" alt="Imagem principal"/>
 				<div id="conteudo-destaque">
 				<h1>Conheça a AroundTheWorld</h1>
 				<p>
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni atque odit ipsa, ratione eius sapiente ab impedit quas non fugiat, ullam iste illo eaque iure pariatur tenetur quis rem rerum.
 				</p>
-			</div>
-			<div id="servicos-oferecidos">
-				<div id="servicos-conteudo">
-      		<div class="servicos-item"><h2 class="servicos-item-hotel">Hotel</h2><h3>em todos os destinos</h3></div>
-      		<div class="servicos-item"><h2 class="servicos-item-passagem">Passagens</h2><h3>aéreas</h3></div>
-      		<div class="servicos-item"><h2 class="servicos-item-visto">Vistos</h2><h3>e documentação</h3></div>
-      		<div class="servicos-item"><h2 class="servicos-item-seguro">Seguros</h2><h3>para sua viagem</h3></div>
 				</div>
-    </div>
+			
+		<div id="servicos-oferecidos">
+			<div id="servicos-conteudo">
+				<div class="servicos-item"><h2 class="servicos-item-hotel">Hotel</h2><h3>em todos os destinos</h3></div>
+				<div class="servicos-item"><h2 class="servicos-item-passagem">Passagens</h2><h3>aéreas</h3></div>
+				<div class="servicos-item"><h2 class="servicos-item-visto">Vistos</h2><h3>e documentação</h3></div>
+				<div class="servicos-item"><h2 class="servicos-item-seguro">Seguros</h2><h3>para sua viagem</h3></div>
 			</div>
+		</div>
 			<section id="destinos">
-				<div id="titulo">
+				<div id="titulo-destino">
 					<h2 class="destino-titulo">Destinos</h2>
 					<select onchange="selecao()" class="selecione-opcoes" id="opcoes">
 						<option value="nada">Filtro</option>
@@ -60,6 +60,9 @@
 						<option value="internacional">Viagens Internacionais</option>
 						<option value="nacionais">Viagens Nacionais</option>
 					</select>
+				</div>
+				<div>
+					<h2 class="nacional-titulo">Nacionais</h2>
 				</div>
 				<div id="destinos-nacionais">
 					<div id="destinos-coluna-1" class="destinos-coluna-1">
@@ -76,18 +79,20 @@
 						<img src="itacare.jpg" alt="itacare" />
 					</div>
 				</div>
+				<div>
+					<h2 class="internacional-titulo">Internacionais</h2>
 				</div>
 				<div id="destinos-internacionais">
-					<div id="destinos-inter-coluna-1">
+					<div id="destinos-inter-coluna-1" class="destinos-inter-coluna-1">
 						<img src="paris.jpg" alt="paris" />
 						<img src="mexico.jpg" alt="mexico" />
 					</div>
-					<div id="destinos-inter-coluna-2">
+					<div id="destinos-inter-coluna-2" class="destinos-inter-coluna-2">
 						<img src="canada.jpg" alt="canada" />
 						<img src="novayork.jpg" alt="novaYork" />
 						<img src="novazelandia.jpg" alt="novaZelandia" />
 					</div>
-					<div id="destinos-inter-coluna-3">
+					<div id="destinos-inter-coluna-3" class="destinos-inter-coluna-3">
 						<img src="japao.jpg" alt="japao" />
 						<img src="australia.jpg" alt="australia" />
 					</div>

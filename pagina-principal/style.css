@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: rgb(58, 55, 61);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -46,6 +45,12 @@ header ul li:hover {
   transform: scale(1.1);
 }
 
+#destaque-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
 #conteudo-destaque {
   width: calc(100% - 300px);
   text-align: left;
@@ -75,7 +80,7 @@ p {
   font-style: italic;
   line-height: 1.173em;
   letter-spacing: 0.4px;
-  padding: 25px 0 0 0;
+  padding: 30px 0 80px 0;
   position: relative;
   text-align: center;
 }
@@ -86,4 +91,106 @@ p {
   text-align: center;
   position: relative;
   float: right;
+  padding: 100px 0 100px 0;
+}
+
+#servicos-conteudo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.destino-titulo {
+  color: #005162;
+  font-family: HolidayFreeRegular;
+  font-size: 2em;
+  line-height: 1em;
+  position: relative;
+  float: left;
+  z-index: 1;
+}
+
+#titulo-destino {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 40px 0 25px 0;
+}
+
+.nacional-titulo {
+  color: #3990a1;
+  font-family: HolidayFreeRegular;
+  font-size: 2em;
+  line-height: 1em;
+  position: relative;
+  z-index: 1;
+  padding: 0 0 10px 0;
+}
+#destinos-nacionais {
+  display: flex;
+}
+
+#destinos-coluna-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 26.549%;
+  font-size: 10px;
+  position: relative;
+  float: left;
+}
+
+#destinos-coluna-2 {
+  width: 46.902%;
+  padding: 0 15px 0 15px;
+  box-sizing: border-box;
+}
+
+#destinos-coluna-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 26.549%;
+  font-size: 10px;
+  position: relative;
+  float: left;
+}
+
+.internacional-titulo {
+  color: #3990a1;
+  font-family: HolidayFreeRegular;
+  font-size: 2em;
+  line-height: 1em;
+  position: relative;
+  z-index: 1;
+  padding: 60px 0 10px 0;
+}
+#destinos-internacionais {
+  display: flex;
+}
+
+#destinos-inter-coluna-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 26.549%;
+  font-size: 10px;
+  position: relative;
+  float: left;
+}
+
+#destinos-inter-coluna-2 {
+  width: 46.902%;
+  padding: 0 15px 0 15px;
+  box-sizing: border-box;
+}
+
+#destinos-inter-coluna-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 26.549%;
+  font-size: 10px;
+  position: relative;
+  float: left;
 }
