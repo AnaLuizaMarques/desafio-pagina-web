@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px 1px 10px 1px #000;
+  margin-bottom: 6px;
+}
+
+header ul li {
+  padding: 5px;
+}
+
+header ul li a {
+  transition: 300ms;
+}
+
+header ul li a:hover {
+  color: rgb(91, 181, 184);
+  text-decoration: underline;
+}
+header ul li:hover {
+  transform: scale(1.1);
+}
+
+#destaque-pagina-imagem,
+#destaque-post-imagem {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  text-indent: -9999px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 100%;
+}
