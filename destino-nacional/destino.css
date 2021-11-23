@@ -40,6 +40,7 @@ header ul li a:hover {
   color: rgb(91, 181, 184);
   text-decoration: underline;
 }
+
 header ul li:hover {
   transform: scale(1.1);
 }
@@ -57,28 +58,21 @@ header ul li:hover {
   overflow: hidden;
 }
 
-h1 {
+#main-principal {
+  background-color: #005162;
   width: 100%;
-  color: #005162;
-  font-family: Lato, sans-serif;
-  font-weight: 900;
-  line-height: 1em;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
+  max-width: 450px;
+  margin: 80px 0 0 0;
+  padding: 30px 50px 70px 50px;
+  box-sizing: border-box;
   position: relative;
-  text-align: justify;
+  float: right;
 }
-p {
-  width: 100%;
-  color: #575757;
-  font-family: Lato, sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  line-height: 1.173em;
-  letter-spacing: 0.4px;
-  padding: 30px 0 40px 10px;
+.post {
+  font-size: 10px;
+  text-align: center;
   position: relative;
-  text-align: left;
+  float: left;
 }
 footer {
   box-shadow: 1px 1px 10px 1px #000;
