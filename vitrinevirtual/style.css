@@ -24,9 +24,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px;
   box-shadow: 1px 1px 10px 1px #000;
-  margin-bottom: 55px;
+  margin-bottom: 6px;
 }
 
 .caixa {

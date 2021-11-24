@@ -28,6 +28,12 @@ header {
   margin-bottom: 6px;
 }
 
+.caixa {
+  width: 940px;
+  position: relative;
+  align-items: center;
+}
+
 header ul li {
   padding: 5px;
 }
