@@ -66,7 +66,9 @@ header ul li:hover {
 #info-principal {
   display: flex;
   justify-content: space-around;
+  margin-top: -125px;
   padding: 30px 50px 70px 50px;
+  align-items: center;
 }
 
 h1 {
@@ -84,15 +86,26 @@ p {
   color: #575757;
   font-family: Lato, sans-serif;
 }
+
+h2 {
+  padding: 10px 0px 10px;
+}
+
 #texto {
   padding: 0 70px 0 0;
   text-align: justify;
 }
+
+#arrow {
+  font-size: 25px;
+  padding-left: 40px;
+}
+
 #info-destinos {
   background-color: #005162;
   width: 100%;
   max-width: 450px;
-  padding: 30px 50px 70px 50px;
+  padding: 0px 50px 70px 50px;
   box-sizing: border-box;
   position: relative;
 }
