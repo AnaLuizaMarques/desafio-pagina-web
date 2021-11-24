@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px 1px 10px 1px #000;
+  margin-bottom: 6px;
+}
+
+header ul li {
+  padding: 5px;
+}
+
+header ul li a {
+  transition: 300ms;
+}
+
+header ul li a:hover {
+  color: rgb(91, 181, 184);
+  text-decoration: underline;
+}
+
+header ul li:hover {
+  transform: scale(1.1);
+}
+
+#destaque-pagina-imagem {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  text-indent: -9999px;
+  position: relative;
+  overflow: hidden;
+}
+
+#info-principal {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 50px 70px 50px;
+}
+
+h1 {
+  padding: 5px 0 0 0;
+  width: 100%;
+  color: #005162;
+  font-family: Lato, sans-serif;
+}
+
+p {
+  margin-top: 15px;
+  text-align: justify;
+  padding: 0 0 15px 0;
+  width: 100%;
+  color: #575757;
+  font-family: Lato, sans-serif;
+}
+#texto {
+  padding: 0 70px 0 0;
+  text-align: justify;
+}
+#info-destinos {
+  background-color: #005162;
+  width: 100%;
+  max-width: 450px;
+  padding: 30px 50px 70px 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.produtos {
+  display: flex;
+  position: relative;
+  padding: 30px 30px 70px 50px;
+}
+
+img {
+  opacity: 1;
+}
+
+#vancouver {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+#montreal {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+#toronto {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+#toronto a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #005162;
+  text-align: center;
+  display: block;
+  padding: 10px 10px 10px 0;
+  font-size: 18px;
+}
+
+#montreal a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #005162;
+  text-align: center;
+  display: block;
+  padding: 10px 10px 10px 0;
+  font-size: 18px;
+}
+
+#vancouver a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #005162;
+  text-align: center;
+  display: block;
+  padding: 10px 10px 10px 0;
+  font-size: 18px;
+}
+
+#orcamento {
+  background-color: #005162;
+  position: absolute;
+  padding: 30px 30px 70px 50px;
+  box-sizing: border-box;
+  position: relative;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#orcamento a {
+  text-decoration: none;
+  color: #005162;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  font-size: 18px;
+}
+
+#texto-principal {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+#link {
+  padding-top: 75px;
+}
+
+#titulo-orcamento {
+  color: #fff;
+}
+
+#condicoes {
+  color: rgb(183, 230, 252);
+}
+
+footer {
+  box-shadow: 1px 1px 10px 1px #000;
+  color: #7b7b7b;
+  display: flex;
+  align-items: center;
+  font-family: Lato, sans-serif;
+  font-size: 10px;
+  line-height: 1em;
+  justify-content: center;
+  padding: 10px;
+}
