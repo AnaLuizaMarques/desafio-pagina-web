@@ -29,6 +29,12 @@ header {
   margin-bottom: 55px;
 }
 
+.caixa {
+  width: 940px;
+  position: relative;
+  align-items: center;
+}
+
 header ul li {
   padding: 5px;
 }
@@ -44,8 +50,18 @@ header ul li a:hover {
 header ul li:hover {
   transform: scale(1.1);
 }
+
 .img-principal {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
+  height: 700px;
+  text-indent: -9999px;
+  position: relative;
+  float: left;
+  overflow: hidden;
 }
 
 #destaque-principal {
@@ -58,7 +74,7 @@ header ul li:hover {
 #conteudo-destaque {
   width: calc(100% - 300px);
   text-align: left;
-  padding: 0 0 0 70px;
+  padding: 20px 0 0 70px;
   box-sizing: border-box;
   position: relative;
   float: right;
@@ -147,6 +163,7 @@ img {
   width: auto;
   height: auto;
   transition: 0.5s ease;
+  padding-top: 30px;
 }
 
 .content {
@@ -196,7 +213,7 @@ img {
 
 #destinos-coluna-2 {
   width: 46.902%;
-  padding: 0 15px 0 15px;
+  padding: 0 15px 0px 15px;
   box-sizing: border-box;
 }
 
