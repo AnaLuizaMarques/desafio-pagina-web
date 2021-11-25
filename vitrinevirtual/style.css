@@ -21,11 +21,16 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   box-shadow: 1px 1px 10px 1px #000;
-  margin-bottom: 6px;
+  margin-bottom: -45px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
 }
 
 .caixa {
@@ -36,6 +41,7 @@ header {
 
 header ul li {
   padding: 5px;
+  color: #575757;
 }
 
 header ul li a {
@@ -50,17 +56,9 @@ header ul li:hover {
   transform: scale(1.1);
 }
 
-.img-principal {
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+#img-principal {
   width: 100%;
-  height: 700px;
-  text-indent: -9999px;
-  position: relative;
-  float: left;
-  overflow: hidden;
+  max-width: 1280px;
 }
 
 #destaque-principal {
@@ -68,15 +66,19 @@ header ul li:hover {
   flex-direction: column;
   align-items: center;
   margin: 20px;
+  width: 100%;
+  max-width: 1280px;
 }
 
 #conteudo-destaque {
-  width: calc(100% - 300px);
-  text-align: left;
-  padding: 20px 0 0 70px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  padding: 20px 80px 20px 0px;
   box-sizing: border-box;
   position: relative;
-  float: right;
+  float: none;
 }
 
 h1 {
@@ -99,24 +101,27 @@ p {
   font-style: italic;
   line-height: 1.173em;
   letter-spacing: 0.4px;
-  padding: 30px 0 80px 0;
+  padding: 30px 0 80px 80px;
   position: relative;
   text-align: center;
 }
 
 #servicos-oferecidos {
   background-color: #005162;
-  width: 100%;
   text-align: center;
   position: relative;
   float: right;
   padding: 100px 0 100px 0;
+  width: 100%;
+  max-width: 1280px;
 }
 
 #servicos-conteudo {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  width: 100%;
+  max-width: 1280px;
 }
 
 .destino-titulo {
@@ -127,24 +132,30 @@ p {
   position: relative;
   float: left;
   z-index: 1;
+  width: 100%;
+  max-width: 1280px;
 }
 
 #titulo-destino {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 40px 0 25px 0;
+  padding: 40px 80px 25px 90px;
+}
+
+.todos-destinos {
+  width: 100%;
+  max-width: 1280px;
 }
 
 .nacional-titulo {
-  color: #3990a1;
+  padding: 40px 10px 25px 90px;
+  color: #005162;
   font-family: HolidayFreeRegular;
   font-size: 2em;
   line-height: 1em;
-  position: relative;
-  z-index: 1;
-  padding: 0 0 10px 0;
 }
+
 #destinos-nacionais {
   display: flex;
 }
@@ -200,23 +211,25 @@ img {
 .wrapper:hover .overlay {
   opacity: 1;
 }
-#destinos-coluna-1 {
+.destinos-coluna-1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 26.549%;
   font-size: 10px;
   position: relative;
   float: left;
+  width: 100%;
+  max-width: 1280px;
 }
-
-#destinos-coluna-2 {
+.destinos-coluna-2 {
   width: 46.902%;
-  padding: 0 15px 0px 15px;
+  padding: 0 0px 0px 0px;
   box-sizing: border-box;
+  width: 100%;
+  max-width: 1280px;
 }
 
-#destinos-coluna-3 {
+.destinos-coluna-3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -224,6 +237,10 @@ img {
   font-size: 10px;
   position: relative;
   float: left;
+  margin-left: 10px;
+
+  width: 100%;
+  max-width: 1280px;
 }
 
 .internacional-titulo {
@@ -239,7 +256,7 @@ img {
   display: flex;
 }
 
-#destinos-inter-coluna-1 {
+.destinos-inter-coluna-1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -247,22 +264,27 @@ img {
   font-size: 10px;
   position: relative;
   float: left;
+  width: 100%;
+  max-width: 1280px;
 }
 
-#destinos-inter-coluna-2 {
+.destinos-inter-coluna-2 {
   width: 46.902%;
   padding: 0 15px 0 15px;
   box-sizing: border-box;
+  width: 100%;
+  max-width: 1280px;
 }
 
-#destinos-inter-coluna-3 {
+.destinos-inter-coluna-3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 26.549%;
   font-size: 10px;
   position: relative;
   float: left;
+  width: 100%;
+  max-width: 1280px;
 }
 
 .destino-item-titulo {

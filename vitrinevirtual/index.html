@@ -1,234 +1,309 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-		<link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="style.css" />
     <title>AroundTheWorld sua agência de viagens</title>
-	</head>
-	<body>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="imagens/logo.png" alt="Logo Empresa" />
+        <div class="caixa">
+          <ul id="itens-menu">
+            <li id="home">
+              <a target="_blank" href="index.html">Home</a>
+            </li>
+            <li id="sobre">
+              <a target="_blank" href="../vitrinevirtual/sobrenos/sobre.html"
+                >Sobre Nós</a
+              >
+            </li>
+            <li id="destinos-item">
+              <a target="_blank" href="">Destinos</a>
+            </li>
+            <li id="dicas-item">
+              <a target="_blank" href="">Dicas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-		<header>
-						<img src="imagens/logo.png" alt="Logo Empresa" />
-					<div id="menu-botao"></div>
-					<div class="caixa">
-						<ul id="itens-menu">
-							<li id="home">
-								<a target="_blank" href="index.html">Home</a>
-							</li>
-							<li id="sobre">
-								<a target="_blank" href="../vitrinevirtual/sobrenos/sobre.html">Sobre Nós</a>
-							</li>
-							<li id="destinos-item">
-								<a target="_blank" href="">Destinos</a>
-							</li>
-							<li id="dicas-item">
-								<a target="_blank" href="">Dicas</a>
-							</li>
-						</ul>
-					</div>
-					<div id="busca">
-						<i class="fas fa-search"></i>
-					</div>
-		</header>
+    <main>
+      <section class="destacar">
+        <div id="destaque-principal">
+          <img
+            src="imagens/Destaque3.jpg"
+            alt="Imagem principal"
+            id="img-principal"
+          />
+        </div>
+        <div id="conteudo-destaque">
+          <h1>Conheça a AroundTheWorld</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+            atque odit ipsa, ratione eius sapiente ab impedit quas non fugiat,
+            ullam iste illo eaque iure pariatur tenetur quis rem rerum.
+          </p>
+        </div>
+      </section>
+      <div id="servicos-oferecidos">
+        <div id="servicos-conteudo">
+          <div class="servicos-item">
+            <h2 class="servicos-item-hotel">Hotel</h2>
+            <h3>em todos os destinos</h3>
+          </div>
+          <div class="servicos-item">
+            <h2 class="servicos-item-passagem">Passagens</h2>
+            <h3>aéreas</h3>
+          </div>
+          <div class="servicos-item">
+            <h2 class="servicos-item-visto">Vistos</h2>
+            <h3>e documentação</h3>
+          </div>
+          <div class="servicos-item">
+            <h2 class="servicos-item-seguro">Seguros</h2>
+            <h3>para sua viagem</h3>
+          </div>
+        </div>
+      </div>
+      <section id="destinos">
+        <div id="titulo-destino">
+          <h2 class="destino-titulo">Destinos</h2>
+          <select onchange="selecao()" class="selecione-opcoes" id="opcoes">
+            <option value="nada">Filtro</option>
+            <option value="internacional">Viagens Internacionais</option>
+            <option value="nacionais">Viagens Nacionais</option>
+          </select>
+        </div>
 
-		<main>
-			<div id="destaque-principal">
-				<img src="imagens/Destaque3.png" alt="Imagem principal" class="img-principal"/>
-				<div id="conteudo-destaque">
-				<h1>Conheça a AroundTheWorld</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni atque odit ipsa, ratione eius sapiente ab impedit quas non fugiat, ullam iste illo eaque iure pariatur tenetur quis rem rerum.
-				</p>
-				</div>
-			
-		<div id="servicos-oferecidos">
-			<div id="servicos-conteudo">
-				<div class="servicos-item"><h2 class="servicos-item-hotel">Hotel</h2><h3>em todos os destinos</h3></div>
-				<div class="servicos-item"><h2 class="servicos-item-passagem">Passagens</h2><h3>aéreas</h3></div>
-				<div class="servicos-item"><h2 class="servicos-item-visto">Vistos</h2><h3>e documentação</h3></div>
-				<div class="servicos-item"><h2 class="servicos-item-seguro">Seguros</h2><h3>para sua viagem</h3></div>
-			</div>
-		</div>
-			<section id="destinos">
-				<div id="titulo-destino">
-					<h2 class="destino-titulo">Destinos</h2>
-					<select onchange="selecao()" class="selecione-opcoes" id="opcoes">
-						<option value="nada">Filtro</option>
-						<option value="internacional">Viagens Internacionais</option>
-						<option value="nacionais">Viagens Nacionais</option>
-					</select>
-				</div>
-			
-				<div>
-					<h2 class="nacional-titulo">Nacionais</h2>
-				</div>
-				<div class="todos-destinos">
-					<div id="destinos-nacionais">
-						<div id="destinos-coluna-1" class="destinos-coluna-1">
-							<div class="wrapper">
-								<img src="imagens/arraialdocabo2.jpg"/>
-								<div class="overlay">
-									<div class="content">
-								Arraial do Cabo - RJ por R$10x140,00 
-										<a target="_blank" href="destino-nacional/destino-nacional.html">Confira mais!</a>
-									</div>
-								</div>
-							</div>
-							<div class="wrapper">
-								<img src="imagens/salvador.jpg" alt="salvador" />
-								<div class="overlay">
-									<div class="content">
-								Salvador - Bahia por R$10x300,00 
-										<a target="_blank" href="destino-nacional/destino-nacional.html">Confira mais!</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="destinos-coluna-2">
-							<div class="wrapper">
-								<img src="imagens/riodejaneiro.jpg" alt="rioDeJaneiro" />
-								<div class="overlay">
-									<div class="content">
-									Rio de Janeiro por R$10x300,00 
-										<a target="_blank" href="destino-nacional/destino-nacional.html">Confira mais!</a>
-									</div>
-								</div>
-							</div>
-							<div class="wrapper">
-								<img src="imagens/fernandodenoronha.jpg" alt="fernandoDeNoronha" />
-								<div class="overlay">
-									<div class="content">
-								Fernando de Noronha por R$10x600,00 
-									<a target="_blank" href="destino-nacional/destino-nacional.html">Confira mais!</a>
-									</div>
-								</div>
-							</div>
-							<div class="wrapper">
-								<img src="imagens/cataratasdoiguacu.jpg" alt="cataratasDoIguaçu" />
-								<div class="overlay">
-									<div class="content">
-								Cataratas do Iguaçu por R$10x250,00 
-										<a target="_blank" href="destino-nacional/destino-nacional.html">Confira mais!</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="destinos-coluna-3">
-							<div class="wrapper">
-								<img src="imagens/saopaulo.jpg" alt="saoPaulo" />
-								<div class="overlay">
-									<div class="content">
-									São Paulo por R$10x150,00 
-										<a target="_blank" href="destino-nacional/destino-nacional.html">Confira mais!</a>
-									</div>
-								</div>
-							</div>
-							<div class="wrapper">
-								<img src="imagens/itacare.jpg" alt="itacare" />
-								<div class="overlay">
-									<div class="content">
-									Itacaré - Bahia por R$10x200,00 
-										<a target="_blank" href="destino-nacional/destino-nacional.html">Confira mais!</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<h2 class="internacional-titulo">Internacionais</h2>
-					</div>
-					<div id="destinos-internacionais">
-						<div id="destinos-inter-coluna-1" class="destinos-inter-coluna-1">
-							<div class="wrapper">
-								<img src="imagens/paris.jpg" alt="paris" />
-								<div class="overlay">
-									<div class="content">
-									Paris - França por R$10x800,00 
-										<a target="_blank" href="destino-internacional/destino.html">Confira mais!</a>
-									</div>
-								</div>
-							</div>
+        <div>
+          <h2 class="nacional-titulo">Nacionais</h2>
+        </div>
+        <div class="todos-destinos">
+          <div id="destinos-nacionais">
+            <div id="destinos-coluna-1" class="destinos-coluna-1">
+              <div class="wrapper">
+                <img
+                  srcset="
+                    imagens/arraialdocabo2.jpg 320w,
+                    imagens/arraialdocabo2.jpg 480w,
+                    imagens/arraialdocabo2.jpg 800w
+                  "
+                  sizes="(max-width: 320px) 280px,
+								(max-width: 480px) 440px,
+								800px"
+                  src="imagens/arraialdocabo2.jpg"
+                  alt="rioDeJaneiro"
+                />
+                <div class="overlay">
+                  <div class="content">
+                    Arraial do Cabo - RJ por R$10x140,00
+                    <a
+                      target="_blank"
+                      href="destino-nacional/destino-nacional.html"
+                      >Confira mais!</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper">
+                <img src="imagens/salvador.jpg" alt="salvador" />
+                <div class="overlay">
+                  <div class="content">
+                    Salvador - Bahia por R$10x300,00
+                    <a
+                      target="_blank"
+                      href="destino-nacional/destino-nacional.html"
+                      >Confira mais!</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="destinos-coluna-2" class="destinos-coluna-2">
+              <div class="wrapper">
+                <img src="imagens/riodejaneiro.jpg" alt="rioDeJaneiro" />
+                <div class="overlay">
+                  <div class="content">
+                    Rio de Janeiro por R$10x300,00
+                    <a
+                      target="_blank"
+                      href="destino-nacional/destino-nacional.html"
+                      >Confira mais!</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper">
+                <img
+                  src="imagens/fernandodenoronha.jpg"
+                  alt="fernandoDeNoronha"
+                />
+                <div class="overlay">
+                  <div class="content">
+                    Fernando de Noronha por R$10x600,00
+                    <a
+                      target="_blank"
+                      href="destino-nacional/destino-nacional.html"
+                      >Confira mais!</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper">
+                <img
+                  src="imagens/cataratasdoiguacu.jpg"
+                  alt="cataratasDoIguaçu"
+                />
+                <div class="overlay">
+                  <div class="content">
+                    Cataratas do Iguaçu por R$10x250,00
+                    <a
+                      target="_blank"
+                      href="destino-nacional/destino-nacional.html"
+                      >Confira mais!</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="destinos-coluna-3" class="destinos-coluna-3">
+              <div class="wrapper">
+                <img src="imagens/saopaulo.jpg" alt="saoPaulo" />
+                <div class="overlay">
+                  <div class="content">
+                    São Paulo por R$10x150,00
+                    <a
+                      target="_blank"
+                      href="destino-nacional/destino-nacional.html"
+                      >Confira mais!</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper">
+                <img src="imagens/itacare.jpg" alt="itacare" />
+                <div class="overlay">
+                  <div class="content">
+                    Itacaré - Bahia por R$10x200,00
+                    <a
+                      target="_blank"
+                      href="destino-nacional/destino-nacional.html"
+                      >Confira mais!</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="internacional-titulo">Internacionais</h2>
+          </div>
+          <div id="destinos-internacionais">
+            <div id="destinos-inter-coluna-1" class="destinos-inter-coluna-1">
+              <div class="wrapper">
+                <img src="imagens/paris.jpg" alt="paris" />
+                <div class="overlay">
+                  <div class="content">
+                    Paris - França por R$10x800,00
+                    <a target="_blank" href="destino-internacional/destino.html"
+                      >Confira mais!</a
+                    >
+                  </div>
+                </div>
+              </div>
 
-							<div class="wrapper">
-								<img src="imagens/mexico.jpg" alt="mexico" />
-								<div class="overlay">
-									<div class="content">
-									Tulum - México por R$10x550,00 
-										<a target="_blank" href="destino-internacional/destino.html">Confira mais!</a>
-									</div>
-								</div>
-							</div>				
-						</div>
-						<div id="destinos-inter-coluna-2" class="destinos-inter-coluna-2">
+              <div class="wrapper">
+                <img src="imagens/mexico.jpg" alt="mexico" />
+                <div class="overlay">
+                  <div class="content">
+                    Tulum - México por R$10x550,00
+                    <a target="_blank" href="destino-internacional/destino.html"
+                      >Confira mais!</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="destinos-inter-coluna-2" class="destinos-inter-coluna-2">
+              <div class="wrapper">
+                <img src="imagens/canada.jpg" alt="canada" />
+                <div class="overlay">
+                  <div class="content">
+                    Toronto - Canadá por R$15x700,00
+                    <a target="_blank" href="destino-internacional/destino.html"
+                      >Confira mais!</a
+                    >
+                  </div>
+                </div>
+              </div>
 
-							<div class="wrapper">
-								<img src="imagens/canada.jpg" alt="canada" />
-								<div class="overlay">
-									<div class="content">
-									Toronto - Canadá por R$15x700,00 
-										<a target="_blank" href="destino-internacional/destino.html">Confira mais!</a>
-									</div>
-								</div>
-							</div>
+              <div class="wrapper">
+                <img src="imagens/novayork.jpg" alt="novaYork" />
+                <div class="overlay">
+                  <div class="content">
+                    Nova York - EUA por R$15x900,00
+                    <a target="_blank" href="destino-internacional/destino.html"
+                      >Confira mais!</a
+                    >
+                  </div>
+                </div>
+              </div>
 
-							<div class="wrapper">
-								<img src="imagens/novayork.jpg" alt="novaYork" />
-								<div class="overlay">
-									<div class="content">
-									Nova York - EUA por R$15x900,00 
-										<a target="_blank" href="destino-internacional/destino.html">Confira mais!</a>
-									</div>
-								</div>
-							</div>
+              <div class="wrapper">
+                <img src="imagens/novazelandia.jpg" alt="novaZelandia" />
+                <div class="overlay">
+                  <div class="content">
+                    Oakland - Nova Zelândia por R$18x900,00
+                    <a target="_blank" href="destino-internacional/destino.html"
+                      >Confira mais!</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
 
-							<div class="wrapper">
-								<img src="imagens/novazelandia.jpg" alt="novaZelandia" />
-								<div class="overlay">
-									<div class="content">
-									Oakland - Nova Zelândia por R$18x900,00 
-										<a target="_blank" href="destino-internacional/destino.html">Confira mais!</a>
-									</div>
-								</div>
-							</div>
-						</div>
+            <div id="destinos-inter-coluna-3" class="destinos-inter-coluna-3">
+              <div class="wrapper">
+                <img src="imagens/japao.jpg" alt="japao" />
+                <div class="overlay">
+                  <div class="content">
+                    Tóquio - Japão por R$18x900,00
+                    <a target="_blank" href="destino-internacional/destino.html"
+                      >Confira mais!</a
+                    >
+                  </div>
+                </div>
+              </div>
 
-						<div id="destinos-inter-coluna-3" class="destinos-inter-coluna-3">
+              <div class="wrapper">
+                <img src="imagens/australia.jpg" alt="australia" />
+                <div class="overlay">
+                  <div class="content">
+                    Sidney - Austrália por R$18x900,00
+                    <a target="_blank" href="destino-internacional/destino.html"
+                      >Confira mais!</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-							<div class="wrapper">
-								<img src="imagens/japao.jpg" alt="japao" />
-								<div class="overlay">
-									<div class="content">
-									Tóquio - Japão por R$18x900,00 
-										<a target="_blank" href="destino-internacional/destino.html">Confira mais!</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="wrapper">
-								<img src="imagens/australia.jpg" alt="australia" />
-								<div class="overlay">
-									<div class="content">
-									Sidney - Austrália por R$18x900,00
-										<a target="_blank" href="destino-internacional/destino.html">Confira mais!</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-			</div>
-			</section>
-		</main>
-	
-		<footer>
-			<div id="footer-direitos">
-				2021 - 2021 © Copyright
-				<span>&nbsp;&nbsp;|&nbsp;&nbsp; </span>
-				AroundTheWorld - Todos os Direitos Reservados
-			</div>
-		</footer>
-	
-	</body>
+    <footer>
+      <div id="footer-direitos">
+        2021 - 2021 © Copyright
+        <span>&nbsp;&nbsp;|&nbsp;&nbsp; </span>
+        AroundTheWorld - Todos os Direitos Reservados
+      </div>
+    </footer>
+  </body>
 </html>
