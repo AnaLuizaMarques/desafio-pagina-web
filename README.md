@@ -6,7 +6,7 @@ AroundTheWorld é um site para comprar pacotes nacionais e internacionais de via
 
 O site possui usabilidade responsiva, hover com botões nas fotos e links redirecionadores.
 
-## Liguagens de progrmação e marcação utilizadas
+## Liguagens de programação e marcação utilizadas
 
 JavaScript, CSS e HTML.
 
