@@ -9,7 +9,6 @@ ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding: 20px;
 }
 
 a {
@@ -50,17 +49,17 @@ header ul li:hover {
   transform: scale(1.1);
 }
 
-#destaque-pagina-imagem {
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+#img-principal {
   width: 100%;
-  height: 600px;
-  text-indent: -9999px;
-  position: relative;
-  float: left;
-  overflow: hidden;
+  max-width: 1280px;
+}
+
+#destaque-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
 }
 
 h1 {
@@ -73,6 +72,7 @@ h1 {
   text-transform: uppercase;
   position: relative;
   text-align: justify;
+  margin-top: 20px;
 }
 
 p {
