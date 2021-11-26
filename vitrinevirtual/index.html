@@ -80,9 +80,8 @@
             <option value="nacionais">Viagens Nacionais</option>
           </select>
         </div>
-
         <div>
-          <h2 class="nacional-titulo">Nacionais</h2>
+          <h2 id="inicio-nacional" class="nacional-titulo">Nacionais</h2>
         </div>
         <div class="todos-destinos">
           <div id="destinos-nacionais">
@@ -172,7 +171,7 @@
             </div>
           </div>
           <div>
-            <h2 class="internacional-titulo">Internacionais</h2>
+            <h2 id="inicio-internacional" class="internacional-titulo">Internacionais</h2>
           </div>
           <div id="destinos-internacionais">
               <div class="wrapper">
@@ -254,5 +253,16 @@
         AroundTheWorld - Todos os Direitos Reservados
       </div>
     </footer>
+
+    <script>
+      function selecao() {
+      let escolher = document.getElementById("opcoes").value;
+      if (escolher == "internacional") {
+        document.getElementById("inicio-internacional").scrollIntoView();
+      } else if (escolher == "nacional") {
+        document.getElementById("inicio-nacional").scrollIntoView()
+      }
+    }
+  </script>
   </body>
 </html>
