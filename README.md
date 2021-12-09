@@ -4,7 +4,7 @@ AroundTheWorld é um site para comprar pacotes nacionais e internacionais de via
 
 ## Uso
 
-O site possui usabilidade responsiva, hover com botões nas fotos e links redirecionadores.Além disso, há 4 páginas linkáveis (Home - Página principal, Sobre Nós - Com informação da Empresa, Bottom na foto do destino nacional - pacote Rio de Janeiro e Bottom na foto do destino internacional - pacote Canadá.)
+O site possui usabilidade responsiva, hover com botões nas fotos e links redirecionadores. Além disso, há 4 páginas linkáveis (Home - Página principal, Sobre Nós - Com informação da Empresa, Bottom na foto do destino nacional - pacote Rio de Janeiro e Bottom na foto do destino internacional - pacote Canadá.)
 
 ## Liguagens de programação e marcação utilizadas
 
